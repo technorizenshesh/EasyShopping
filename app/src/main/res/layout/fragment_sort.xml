@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SortFragment"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/layout_myProfile"
+        layout="@layout/layou_header"/>
+
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="#40BFFF"
+        android:textStyle="bold"
+        android:text="@string/best_match"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/neural_dark"
+        android:textStyle="bold"
+        android:text="@string/time_ending_soonest"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/neural_dark"
+        android:textStyle="bold"
+        android:text="@string/time_newly_listed"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+    <TextView
+        android:id="@+id/tv_ship_low"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/neural_dark"
+        android:textStyle="bold"
+        android:text="@string/price_shipping_lowest_first"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+    <TextView
+        android:id="@+id/tv_ship_high"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/neural_dark"
+        android:textStyle="bold"
+        android:text="@string/price_shipping_highest_first"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+    <TextView
+        android:id="@+id/tv_dist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/neural_dark"
+        android:textStyle="bold"
+        android:text="@string/distance_nearest_first"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+</LinearLayout>
+
+</layout>

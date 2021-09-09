@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/layout_myProfile"
+            layout="@layout/layou_header"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            >
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Block B flat 302 23 saint patricks road Scottsville"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/delivery_instructions"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/conta"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="0800 123 456"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/alternative_number"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/promo_code"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/dark_blue_border"
+                android:layout_marginTop="@dimen/_8sdp"
+                >
+                <EditText
+                    android:id="@+id/etPtomo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:backgroundTint="@color/white"
+                    android:layout_toLeftOf="@+id/btApply"
+                    android:textSize="@dimen/_12sdp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply"
+                    android:background="@color/green_blue"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textAllCaps="false"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/payment_method"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/light_gray_border"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+                <Spinner
+                    android:id="@+id/spinnerPayment"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/f1_tip"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/light_gray_border"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+                <Spinner
+                    android:id="@+id/spinnerMusic"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green_blue"
+                android:textAllCaps="false"
+                android:text="@string/check_out"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_25sdp"
+                />
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

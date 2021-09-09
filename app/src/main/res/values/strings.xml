@@ -1,0 +1,130 @@
+<resources>
+    <array name="initial_slider_values">
+        <item>20.0</item>
+        <item>70.0</item>
+    </array>
+    <string name="app_name">PriceApp</string>
+    <string name="email">Email</string>
+    <string name="don_t_have_an_account">Don\'t have an account</string>
+    <string name="register_now">Register Now</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="please_add_address">Please Enter Address</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_category">Top Category</string>
+    <string name="account">Account</string>
+    <string name="order">Order</string>
+    <string name="address">Address</string>
+    <string name="add_address">Add Address</string>
+    <string name="payment">Payment</string>
+    <string name="profile">Profile</string>
+    <string name="more">More</string>
+    <string name="compare">Compare</string>
+    <string name="pricehub">Pricehub</string>
+    <string name="view_all">View All</string>
+    <string name="sort_br">Sort By</string>
+    <string name="sub">Sub Category</string>
+    <string name="time_newly_listed">Time: newly listed</string>
+    <string name="distance_nearest_first">Distance: nearest first</string>
+    <string name="price_shipping_highest_first">Price + Shipping: highest first</string>
+    <string name="price_shipping_lowest_first">Price + Shipping: lowest first</string>
+    <string name="time_ending_soonest">Time: ending soonest</string>
+    <string name="best_match">Best Match</string>
+    <string name="promotions">Promotions</string>
+    <string name="promot">Promotions</string>
+    <string name="birth">Birthday</string>
+    <string name="ph_num">Phone Number</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="gender">Gender</string>
+    <string name="price_range">Price Range</string>
+    <string name="condition">Condition</string>
+    <string name="itme_list">Item Location</string>
+    <string name="buying_format">Buying Format</string>
+    <string name="show_only">Show Only</string>
+    <string name="apply">Apply</string>
+
+    <string name="check_out">Check Out</string>
+    <string name="rating">Rating</string>
+    <string name="size">Size</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="ship">Ship To</string>
+    <string name="choose_card">Choose Card</string>
+    <string name="next">Next</string>
+    <string name="comparison">Comparison</string>
+    <string name="total_price">Total Price</string>
+    <string name="del">Delivery Type</string>
+    <string name="pickup">  Pickup</string>
+    <string name="order_review">Order Review</string>
+    <string name="delivery_instructions">Delivery Instructions</string>
+    <string name="conta">Contact Details</string>
+    <string name="alternative_number">Alternative Number</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="f1_tip">F1 tip</string>
+    <string name="comparative_grand_total">Comparative Grand Total</string>
+    <string name="checkout">Checkout</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="msg_noInternet">Internet Connection Not Available</string>
+    <string name="on_error">On error</string>
+    <string name="enter_valid_email">Please enter valid email.</string>
+    <string name="please_enter_pass">Please enter password.</string>
+    <string name="please_enter_con_pass">Please enter confirm password.</string>
+    <string name="please_enter_mobile_number">Please enter mobile number.</string>
+    <string name="pass_dont_match">Please enter password.</string>
+    <string name="pass_and_confirm_pass_not_macthed">Password and confirm password is not matched.</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="signup">Signup</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="send">Send</string>
+    <string name="save">Save</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="change_pass">Change Password</string>
+
+    <string name="please_enter_old_pass">Please enter old password.</string>
+    <string name="please_enter_confirm_password">Please enter confirm password.</string>
+    <string name="password_mismatched">Please make sure your password match.</string>
+    <string name="enter_new_password">Please enter new password.</string>
+    <string name="old_password_mismatched">Wrong old password.</string>
+    <string name="logout">Logout</string>
+
+    <string name="permisson_denied">Permission denied</string>
+    <string name="search">Search</string>
+    <string name="house_flat_number">House/Flat Number</string>
+    <string name="address_line2">Address Line2</string>
+    <string name="postcode">Postcode</string>
+    <string name="road_name_area_colony">Road name, Area, Colony</string>
+    <string name="enter_state">Enter State</string>
+    <string name="enter_city">Enter City</string>
+
+    <string name="view_cart">View Cart</string>
+    <string name="successful">Successful</string>
+
+    <string name="api_key">AIzaSyBduv61ywGy3e9mU6NJ_a7GHCf5oSbxT2w</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="edit">Edit</string>
+    <string name="add_card">Add Card</string>
+    <string name="search_cat">Search Category</string>
+    <string name="search_item">Search Product</string>
+    <string name="my_offers">My Offers</string>
+    <string name="search_products">Search Products</string>
+    <string name="remove">Remove</string>
+    <string name="order_details">Order Details</string>
+    <string name="place_order">Place Order</string>
+    <string name="orders">Orders</string>
+    <string name="items_details">Items Details</string>
+
+</resources>

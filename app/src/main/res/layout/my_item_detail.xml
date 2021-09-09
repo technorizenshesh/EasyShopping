@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    >
+
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/gray_bg_5"/>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_toRightOf="@id/ivProductImage"
+        android:layout_marginLeft="@dimen/_10sdp"
+        />
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@id/tvProductName"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/ivProductImage"
+        android:layout_marginLeft="@dimen/_10sdp"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:transformPivotX="0dp"
+        android:layout_below="@+id/tvQuantity"
+        android:transformPivotY="0dp"
+        android:layout_toRightOf="@id/ivProductImage"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:max="5" />
+</RelativeLayout>
+</layout>

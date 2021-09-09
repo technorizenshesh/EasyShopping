@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.PaymentFragment"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <include
+            android:id="@+id/layout_myProfile"
+            layout="@layout/layou_header"/>
+
+        <LinearLayout
+            android:id="@+id/llCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_blue_payment"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Card or Debit "
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_20sdp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@drawable/gray_bg_5"/>
+
+        <LinearLayout
+            android:id="@+id/llPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/ic_cash"
+                android:layout_gravity="center_vertical"
+                app:tint="@color/bright_blue" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash "
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_20sdp"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@drawable/gray_bg_5"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green_blue"
+            android:textAllCaps="false"
+            android:text="Choose Payment Option"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_margin="@dimen/_15sdp"
+            />
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignupAct"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp"
+    android:fillViewport="true"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_now"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/name"
+    android:textColor="@color/hint_color"
+    android:textSize="@dimen/_11sdp"
+    android:fontFamily="@font/montserrat_semibold"
+    android:layout_marginTop="@dimen/_30sdp"
+    />
+
+<EditText
+    android:id="@+id/etName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/et_bg"
+    android:padding="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:hint="@string/enter_name"
+    android:textSize="@dimen/_12sdp"
+    android:textColor="@color/black"
+    android:paddingStart="@dimen/_13sdp"
+    android:imeOptions="actionNext"
+    android:inputType="text"
+    android:textColorHint="@color/hint_color"
+    android:fontFamily="@font/montserrat_regular"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="@dimen/_13sdp"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="@string/enter_email"
+        android:paddingStart="@dimen/_13sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColorHint="@color/hint_color"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:imeOptions="actionNext"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="@dimen/_13sdp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/et_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                app:ccp_textSize="12dp"
+                app:ccp_countryPreference="BE,BG,CZ,DK,DE,EE,IE,EL,ES,FR,HR,IT,CY,LV,LT,LU,HU,MT,NL,PL,PT,SI,SK,FI,SE,IS,NO,CH,ME,MK,AL,RS,TR"
+                app:ccp_defaultPhoneCode="91"
+                android:layout_marginRight="5dp"
+                android:layout_height="@dimen/_35sdp"/>
+
+
+                <EditText
+                    android:id="@+id/etNumber"
+                    android:layout_width="0dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textSize="@dimen/_12sdp"
+                    android:hint="@string/enter_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="@dimen/_13sdp"
+        />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="@string/enter_password"
+        android:textSize="@dimen/_12sdp"
+        android:paddingStart="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_color"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_password"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="@dimen/_13sdp"
+        />
+
+    <EditText
+        android:id="@+id/etConPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="@string/enter_confirm_password"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/_13sdp"
+        android:textColorHint="@color/hint_color"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:fontFamily="@font/montserrat_regular"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_bg"
+        android:textAllCaps="false"
+        android:text="@string/signup"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_30sdp"
+        />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAlreayHave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</layout>

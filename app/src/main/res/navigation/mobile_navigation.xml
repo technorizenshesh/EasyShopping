@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.easyshopping.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_navigation_home_to_subCategoryFragment"
+            app:destination="@id/subCategoryFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_promotionFragment"
+            app:destination="@id/promotionFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_sortFragment"
+            app:destination="@id/sortFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_filterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_searchCatFragment"
+            app:destination="@id/searchCatFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.easyshopping.fragments.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_comparisonFragment"
+            app:destination="@id/comparisonFragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+
+     <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.easyshopping.fragments.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" >
+         <action
+             android:id="@+id/action_navigation_cart_to_shipToFragment"
+             app:destination="@id/shipToFragment" />
+         <action
+             android:id="@+id/action_navigation_cart_to_comparativeGrandTotalFragment"
+             app:destination="@id/comparativeGrandTotalFragment" />
+     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.easyshopping.fragments.ProfileFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_user_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_navigation_user_to_shipToFragment"
+            app:destination="@id/shipToFragment" />
+        <action
+            android:id="@+id/action_navigation_user_to_chooseCardFragment"
+            app:destination="@id/chooseCardFragment" />
+        <action
+            android:id="@+id/action_navigation_user_to_myOrdersFragment"
+            app:destination="@id/myOrdersFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/subCategoryFragment"
+        android:name="com.easyshopping.fragments.SubCategoryFragment"
+        android:label="SubCategoryFragment" >
+        <action
+            android:id="@+id/action_subCategoryFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.easyshopping.fragments.MyProfileFragment"
+        android:label="MyProfileFragment" >
+
+        <action
+            android:id="@+id/action_myProfileFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_nameFragment"
+            app:destination="@id/nameFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_phoneFragment"
+            app:destination="@id/phoneFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_changePassFragment"
+            app:destination="@id/changePassFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.easyshopping.fragments.ItemListFragment"
+        android:label="ItemListFragment" >
+        <action
+            android:id="@+id/action_itemListFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_comparisonFragment"
+            app:destination="@id/comparisonFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_searchVendorItemFragment"
+            app:destination="@id/searchVendorItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/promotionFragment"
+        android:name="com.easyshopping.fragments.PromotionFragment"
+        android:label="PromotionFragment" >
+        <action
+            android:id="@+id/action_promotionFragment_to_comparisonFragment"
+            app:destination="@id/comparisonFragment" />
+        <action
+            android:id="@+id/action_promotionFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.easyshopping.fragments.EmailFragment"
+        android:label="EmailFragment" />
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.easyshopping.fragments.PhoneFragment"
+        android:label="PhoneFragment" />
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.easyshopping.fragments.NameFragment"
+        android:label="NameFragment" />
+    <fragment
+        android:id="@+id/sortFragment"
+        android:name="com.easyshopping.fragments.SortFragment"
+        android:label="SortFragment" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.easyshopping.fragments.FilterFragment"
+        android:label="FilterFragment" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.easyshopping.fragments.ProductFragment"
+        android:label="ProductFragment" >
+        <action
+            android:id="@+id/action_productFragment_to_comparisonFragment"
+            app:destination="@id/comparisonFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/shipToFragment"
+        android:name="com.easyshopping.fragments.ShipToFragment"
+        android:label="ShipToFragment" >
+
+
+        <action
+            android:id="@+id/action_shipToFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <action
+            android:id="@+id/action_shipToFragment_to_chooseCardFragment"
+            app:destination="@id/chooseCardFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/chooseCardFragment"
+        android:name="com.easyshopping.fragments.ChooseCardFragment"
+        android:label="ChooseCardFragment" >
+        <action
+            android:id="@+id/action_chooseCardFragment_to_addCardFragment"
+            app:destination="@id/addCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.easyshopping.fragments.PaymentFragment"
+        android:label="PaymentFragment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_chooseCardFragment"
+            app:destination="@id/chooseCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comparisonFragment"
+        android:name="com.easyshopping.fragments.ComparisonFragment"
+        android:label="ComparisonFragment" />
+
+
+    <fragment
+        android:id="@+id/comparativeGrandTotalFragment"
+        android:name="com.easyshopping.fragments.ComparativeGrandTotalFragment"
+        android:label="ComparativeGrandTotalFragment" >
+        <action
+            android:id="@+id/action_comparativeGrandTotalFragment_to_orderReviewFragment"
+            app:destination="@id/orderReviewFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/orderReviewFragment"
+        android:name="com.easyshopping.fragments.OrderReviewFragment"
+        android:label="OrderReviewFragment" >
+        <action
+            android:id="@+id/action_orderReviewFragment_to_shipToFragment"
+            app:destination="@id/shipToFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePassFragment"
+        android:name="com.easyshopping.fragments.ChangePassFragment"
+        android:label="ChangePassFragment" />
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.easyshopping.fragments.AddAddressFragment"
+        android:label="AddAddressFragment" >
+        <action
+            android:id="@+id/action_addAddressFragment_to_currentLocationFragment"
+            app:destination="@id/currentLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentLocationFragment"
+        android:name="com.easyshopping.fragments.CurrentLocationFragment"
+        android:label="fragment_current_location"
+        tools:layout="@layout/fragment_current_location" />
+    <fragment
+        android:id="@+id/addCardFragment"
+        android:name="com.easyshopping.fragments.AddCardFragment"
+        android:label="AddCardFragment" />
+    <fragment
+        android:id="@+id/searchVendorItemFragment"
+        android:name="com.easyshopping.fragments.SearchVendorItemFragment"
+        android:label="SearchVendorItemFragment" >
+        <action
+            android:id="@+id/action_searchVendorItemFragment_to_comparisonFragment"
+            app:destination="@id/comparisonFragment" />
+        <action
+            android:id="@+id/action_searchVendorItemFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchCatFragment"
+        android:name="com.easyshopping.fragments.SearchCatFragment"
+        android:label="SearchCatFragment" >
+        <action
+            android:id="@+id/action_searchCatFragment_to_subCategoryFragment"
+            app:destination="@id/subCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myOrdersFragment"
+        android:name="com.easyshopping.fragments.MyOrdersFragment"
+        android:label="MyOrdersFragment" >
+        <action
+            android:id="@+id/action_myOrdersFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.easyshopping.fragments.OrderDetailFragment"
+        android:label="OrderDetailFragment" />
+
+
+</navigation>

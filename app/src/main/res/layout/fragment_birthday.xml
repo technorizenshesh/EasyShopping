@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/layout_myProfile"
+            layout="@layout/layou_header"/>
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:text="Your Birthday"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/light_gray_border"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12/12/2020"
+                android:backgroundTint="@color/white"
+                android:editable="false"
+                android:fontFamily="@font/montserrat_semibold"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/ic_cal_blue"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/line_color"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bright_blue"
+            android:textAllCaps="false"
+            android:text="Save"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_margin="@dimen/_15sdp"
+            />
+    </RelativeLayout>
+
+</layout>

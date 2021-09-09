@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:padding="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@color/white"
+    android:id="@+id/rlCategory"
+    >
+
+  <!--  <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:background="#D6D6D6"
+        />-->
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLAT 70"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_toRightOf="@+id/ivProfile"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        />
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valid on orders with items worth $159 or more"
+        android:textSize="@dimen/_11sdp"
+        android:ems="15"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_toRightOf="@+id/ivProfile"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+    <TextView
+        android:id="@+id/btnAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:textAllCaps="false"
+        android:text="Apply"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/green"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnViewCart"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/green_bg_5"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:textAllCaps="false"
+        android:text="@string/view_cart"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+    </RelativeLayout>
+</layout>

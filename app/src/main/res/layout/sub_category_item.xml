@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCompany"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.SubCategoryFragment"
+    android:layout_margin="@dimen/_8sdp"
+     >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            >
+
+            <ImageView
+                android:id="@+id/ivCompany"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/name"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
+</layout>
+

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.CartFragment"
+        android:orientation="vertical"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_above="@+id/llBottom"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:text="Your Cart"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textSize="@dimen/_16sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/line_color"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:id="@+id/llAvailCart"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCartItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/tvType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/del"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvType"
+                            >
+
+                            <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioGroup"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/radioPickup"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="  Pickup"
+                                android:checked="false"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <RadioButton
+                                android:id="@+id/radioDelivery"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="   Delivery"
+                                android:checked="true"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:textSize="@dimen/_13sdp" />
+                        </RadioGroup>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:visibility="gone"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/light_gray_border"
+                            android:padding="@dimen/_10sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:hint="Enter coupon code"
+                            android:textSize="@dimen/_12sdp"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/bottom_right_5"
+                            android:text="@string/apply"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:paddingHorizontal="@dimen/_13sdp"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/light_gray_border"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        >
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rvCartBottom"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            >
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shipping"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/montserrat_regular"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/black"
+                                android:id="@+id/tvShipping"
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Import charges"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/montserrat_regular"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/black"
+                                android:id="@+id/tvImport"
+                                />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/line_color"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/total_price"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_centerVertical="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvTotalPrice"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14sdp"
+                                />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:visibility="gone"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCheckout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_bg_5"
+                android:textAllCaps="false"
+                android:text="@string/check_out"
+                android:layout_weight=".5"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/white"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCompare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/light_gray_border"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:layout_weight=".5"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"
+                android:text="@string/compare"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivNocart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/empty_cart"/>
+
+    </RelativeLayout>
+
+</layout>

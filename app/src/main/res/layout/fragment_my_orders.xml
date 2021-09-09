@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.MyOfferFragment"
+        >
+        <include layout="@layout/layou_header" android:id="@+id/header"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOrdered"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            tools:itemCount="3"
+            tools:listitem="@layout/my_order_item"
+            />
+    </LinearLayout>
+</layout>

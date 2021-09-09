@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.PaymentFragment"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/layout_myProfile"
+            layout="@layout/layou_header"/>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/light_gray_border"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_margin="@dimen/_15sdp"
+            >
+            <Spinner
+                android:id="@+id/spinnerMusic"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bright_blue"
+        android:textAllCaps="false"
+        android:text="Save"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_margin="@dimen/_15sdp"
+        />
+
+    </RelativeLayout>
+</layout>
